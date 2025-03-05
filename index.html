@@ -101,12 +101,23 @@
             background-color: #f9fcff;
         }
 
+	.section::after {
+	    content: '';
+	    display: block;
+	    clear: both;
+	}
+
+
         h2 {
-            color: #2574A9;
-            border-bottom: 2px solid #A8D7EE;
-            padding-bottom: 5px;
-            margin-top: 0;
-        }
+	    color: #2574A9;
+	    border-bottom: 2px solid #A8D7EE;
+	    padding-bottom: 5px;
+	    margin-top: 0;
+	    text-transform: uppercase;
+	    font-size: 1.2em;
+	    letter-spacing: 1px;
+	}
+
 
         p {
             color: #333;
@@ -172,24 +183,23 @@
 	    border-radius: 8px;        /* Soft corners for a cleaner look */
 	}
 
-	.left {
-		float: left;
-	}
-
-	.right {
-		float: right;
-	}
-
     	.image-wrapper {
 	    max-width: 200px;
 	    margin: 10px 15px 10px 0; 
 	}
 	
 	.image-wrapper img {
-	    width: 100%;                /* Fill the container */
-	    height: auto;                /* Maintain aspect ratio */
-	    border: 2px solid #A8D7EE;  /* Matches your theme */
-	    border-radius: 8px;         /* Optional for softer look */
+	    width: 100%;
+	    height: auto;
+	    border: 2px solid #A8D7EE;
+	    border-radius: 8px;
+	    display: block;
+	}
+	.image-wrapper.left {
+	    float: left;
+	}
+	.image-wrapper.right {
+	    float: right;
 	}
     </style>
 </head>
@@ -220,7 +230,7 @@
 	<div class="image-wrapper right">
 		<img src="eniac.webp" />
 	</div>
-	<p>John Mauchly & J. Presper Eckert thought they could create a machine that could calculate the angle soldiers in world war || should fire based on how far the target was faster. They ended up creating the ENIAC (Electronic Numerical Integrator And Computer).</p>
+	<p>John Mauchly & J. Presper Eckert thought they could create a machine that could calculate the angle soldiers in World War II should fire based on how far the target was faster. They ended up creating the ENIAC (Electronic Numerical Integrator And Computer).</p>
 
 	<p>Believe it or not, many of the first computers were actually coded/created by women! For example, six women were hired to perform calculations with the ENIAC (Electronic Numerical Integrator And Computer). “The team included Jean Jennings Bartick, who would later lead the development of computer storage & memory, & Frances Elizabeth ‘Betty’ Holberton, who would go on to create the first software application. Together with Frances Bilas Spence, Marlyn Wescoff Meltzer, Katheen ‘Kay’ Mcnulty Mauchly Antonelli, & Ruth Lichterman Teitelbaum, they laid the groundwork for future programmers & software engineers.”<a href="#cite-3" class="citation">[3]</a></p>
     </div>
