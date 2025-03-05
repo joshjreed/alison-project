@@ -171,6 +171,19 @@
 	    border: 4px solid #A8D7EE; /* Optional: adds a subtle border that matches your theme */
 	    border-radius: 8px;        /* Soft corners for a cleaner look */
 	}
+
+    	.image-wrapper {
+	    max-width: 200px;         /* Or whatever size fits your layout */
+	    margin: 10px 15px 10px 0;  /* Space between image and text */
+	    float: left;                /* Float to the left of the text */
+	}
+	
+	.image-wrapper img {
+	    width: 100%;                /* Fill the container */
+	    height: auto;                /* Maintain aspect ratio */
+	    border: 2px solid #A8D7EE;  /* Matches your theme */
+	    border-radius: 8px;         /* Optional for softer look */
+	}
     </style>
 </head>
 <body>
@@ -184,8 +197,11 @@
     <div class="section">
         <h2>So, how did they do it?</h2>
         <p>People usually coded some of the first computers with wires. Also known as patch cords. They had to plug everything in when they wanted to use it, take all of them out, & do it over & over & over. This was very time-consuming but, unfortunately, there was no other way to do it.</p>
-
-	<p><img src="punchcards.jpg" />Another popular way of coding in the mid 1900s was by using punched cards. The term “patch” of some software actually originated from when someone would punch a hole somewhere they shouldn’t have so they would patch it up. “...the program was not stored in memory, but encoded on punched cards that were read one at a time. One stream of cards was for the processor, while a separate stream was used for the memory…” <a href="#cite-2" class="citation">[2]</a>.</p>
+	
+	<div class="image-wrapper left">
+		<img src="punchcards.jpg" />
+	</div>
+	<p>Another popular way of coding in the mid 1900s was by using punched cards. The term “patch” of some software actually originated from when someone would punch a hole somewhere they shouldn’t have so they would patch it up. “...the program was not stored in memory, but encoded on punched cards that were read one at a time. One stream of cards was for the processor, while a separate stream was used for the memory…” <a href="#cite-2" class="citation">[2]</a>.</p>
 
 	<p>One thing that Charles Babbage created was called the Babbage Difference Engine. The ABC weighed over 700 pounds & used vacuum tubes. Also, it had a rotating drum. “The ABC completed one operation about every 15 seconds. Compared to the millions of operations per second of today’s computer, that probably seems like a long time.” <a href="#cite-5" class="citation">[5]</a></p>
     </div>
@@ -194,7 +210,10 @@
         <h2>Who did it?</h2>
         <p>Charles Babbage played a big part in the first computer programming by creating an analytical engine (a mechanical machine/contraption that could be programmed to do complicated math equations.</p>
 
-	<p><img src="eniac.webp" />John Mauchly & J. Presper Eckert thought they could create a machine that could calculate the angle soldiers in world war || should fire based on how far the target was faster. They ended up creating the ENIAC (Electronic Numerical Integrator And Computer).</p>
+	<div class="image-wrapper left">
+		<img src="eniac.webp" />
+	</div>
+	<p>John Mauchly & J. Presper Eckert thought they could create a machine that could calculate the angle soldiers in world war || should fire based on how far the target was faster. They ended up creating the ENIAC (Electronic Numerical Integrator And Computer).</p>
 
 	<p>Believe it or not, many of the first computers were actually coded/created by women! For example, six women were hired to perform calculations with the ENIAC (Electronic Numerical Integrator And Computer). “The team included Jean Jennings Bartick, who would later lead the development of computer storage & memory, & Frances Elizabeth ‘Betty’ Holberton, who would go on to create the first software application. Together with Frances Bilas Spence, Marlyn Wescoff Meltzer, Katheen ‘Kay’ Mcnulty Mauchly Antonelli, & Ruth Lichterman Teitelbaum, they laid the groundwork for future programmers & software engineers.”<a href="#cite-3" class="citation">[3]</a></p>
     </div>
