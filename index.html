@@ -28,31 +28,71 @@
             animation: fadeIn 0.8s ease-out;
         }
 
-         /* Header with solid background */
-        .header {
-            background-color: #A8D7EE;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            font-size: 1.8em;
-            font-weight: bold;
-        }
-
-        .header h1 {
+         .header {
+	    background-color: #A8D7EE;
+	    color: white;
+	    text-align: center;
+	    padding: 30px;
+	    position: relative;
+	    overflow: hidden;
+	    border-bottom: 4px solid #2574A9;
+	}
+	
+	/* Add subtle animated circuit lines on the sides */
+	.header::before, .header::after {
+	    content: '';
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    width: 30px;
+	    background-image: linear-gradient(
+	        to bottom,
+	        transparent 0%,
+	        #2574A9 20%,
+	        transparent 40%,
+	        #2574A9 60%,
+	        transparent 80%,
+	        #2574A9 100%
+	    );
+	    animation: pulseLines 3s infinite alternate;
+	    opacity: 0.6;
+	}
+	
+	.header::before {
+	    left: 0;
+	}
+	
+	.header::after {
+	    right: 0;
+	}
+	
+	/* Header Title */
+	.header h1 {
 	    font-size: 1.8em;
 	    margin: 0;
+	    letter-spacing: 1px;
+	    text-transform: uppercase;
 	    text-shadow: 
-	        -1px -1px 0 black,  
-	        1px -1px 0 black,
-	        -1px 1px 0 black,
-	        1px 1px 0 black;
+	        -1px -1px 0 rgba(0,0,0,0.7),  
+	        1px 1px 0 rgba(0,0,0,0.7);
 	}
-
+	
+	/* Smaller subtitle text */
 	.header p {
 	    font-size: 0.9em;
-	    margin: 5px 0 0;
-	    color: #08415C; /* Dark complementary color (dark blue) */
+	    margin: 8px 0 0;
+	    color: rgba(0, 0, 0, 0.75); /* Darker to pop on light blue */
 	    font-weight: bold;
+	}
+	
+	/* Simple animation to make the side "circuit" bars pulse slightly */
+	@keyframes pulseLines {
+	    from {
+	        opacity: 0.4;
+	    }
+	    to {
+	        opacity: 0.9;
+	    }
 	}
 
         .section {
