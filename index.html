@@ -7,12 +7,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+        /* Overall Page Styling */
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #6e8efb, #a777e3);
-            color: #fff;
             margin: 0;
             padding: 0;
+            background-color: #f7fbff;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -20,52 +20,94 @@
         }
 
         .container {
-            background: rgba(255, 255, 255, 0.95);
-            color: #333;
-            padding: 30px;
             width: 90%;
             max-width: 900px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-            animation: fadeIn 1s ease-out;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            border-radius: 12px;
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-out;
         }
 
-        h1 {
+        /* Header */
+        .header {
+            background-color: #A8D7EE;
+            color: white;
             text-align: center;
-            font-size: 2.5em;
+            padding: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            font-size: 1em;
+            font-weight: normal;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 20px;
             margin: 0;
-            color: #6e8efb;
+            border-bottom: 1px solid #E0E0E0;
+            background-color: #F1F9FC;
         }
 
         h2 {
-            border-bottom: 2px solid #6e8efb;
+            color: #2574A9;
+            border-bottom: 2px solid #A8D7EE;
             padding-bottom: 5px;
+            margin-top: 0;
         }
 
         p {
-            line-height: 1.8;
+            color: #444;
+            line-height: 1.7;
         }
 
-        .section {
-            margin: 20px 0;
+        .citation {
+            font-size: 0.85em;
+            vertical-align: super;
+            color: #2574A9;
+            cursor: pointer;
+        }
+
+        /* Citations Section */
+        .citations-list {
+            background-color: #EAF6FC;
             padding: 15px;
-            background: #f0f4ff;
-            border-left: 5px solid #6e8efb;
-            border-radius: 8px;
+            border-top: 2px solid #A8D7EE;
+            font-size: 0.9em;
         }
 
+        .citations-list ol {
+            padding-left: 20px;
+        }
+
+        .citations-list li {
+            margin: 5px 0;
+            color: #333;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
-            margin-top: 20px;
+            background-color: #A8D7EE;
+            color: white;
+            padding: 10px;
             font-size: 0.9em;
-            color: #555;
         }
 
-        /* Fun animation for entry */
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Animations */
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(-30px);
+                transform: translateY(-20px);
             }
             to {
                 opacity: 1;
@@ -73,35 +115,6 @@
             }
         }
 
-        /* Optional button to link back to class page or resources */
-        .button {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 8px 15px;
-            background-color: #6e8efb;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #4f72db;
-        }
-
-	.citation {
-            font-size: 0.9em;
-            vertical-align: super;
-            color: #6e8efb;
-            cursor: pointer;
-        }
-
-        .citations-list {
-            background: #f9f9f9;
-            padding: 15px;
-            border-radius: 8px;
-            font-size: 0.9em;
-        }
     </style>
 </head>
 <body>
@@ -136,9 +149,8 @@
         </ul>
     </div>
 
-	<div class="section">
+	<div class="section citations-list">
         <h2>Citations</h2>
-        <div class="citations-list">
             <ol>
                 <li><a href="https://engineering.mit.edu/engage/ask-an-engineer/how-did-people-in-the-olden-days-create-software-without-any-programming-software/">How did people in the olden days create software without any programming software?</a></li>
                 <li><a href="https://cacm.acm.org/research/the-first-computer-program/">The First Computer Program</a></li>
@@ -147,7 +159,6 @@
 	        <li><a href="https://theconversation.com/what-was-the-first-computer-122164#:~:text=The%20first%20mechanical%20computer%2C%20The,computer%20we%20all%20use%20today.&text=The%20ABC%20weighed%20over%20700,had%20small%20capacitors%20on%20it.">What was the first computer?</a></li>
 	        <li><a href="https://www.dbvis.com/thetable/why-are-they-called-bugs/">Why do we call software bugs, bugs?</a></li>
             </ol>
-        </div>
     </div>
 
     <footer>
